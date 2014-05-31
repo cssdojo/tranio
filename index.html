@@ -251,6 +251,37 @@
 		<div class="b-feedback">
 			<div class="b-feedback__in">
 				<div class="b-feedback__title">Убедитесь сами!</div>
+				<!-- begin b-form -->
+				<div class="b-form">
+					<form action="#">
+						<div class="b-form__row">
+							<div class="b-form__group">
+								<label for="inputName" class="b-form__label">Имя</label>
+								<input id="inputName" type="text" class="b-form__input" value="Никита Самарин">
+							</div>
+							<div class="b-form__group">
+								<label for="inputTel" class="b-form__label">Номер телефона</label>
+								<input id="inputTel" type="tel" class="b-form__input" value="">
+							</div>
+							<div class="b-form__group is-error">
+								<label for="inputEmail" class="b-form__label">Электронная почта</label>
+								<input id="inputEmail" type="email" class="b-form__input" value="u0rypt@gmail.com">
+								<div class="b-form__help">
+									<p>Не удаётся распознать ваш e-mail.</p>
+									<p>Пожалуйста, уточните адрес.</p>
+								</div>
+							</div>
+						</div>
+						<div class="b-form__row">
+							<label for="exampleTextarea" class="b-form__label">Ваше сообщение</label>
+							<textarea name="" id="exampleTextarea" cols="30" rows="10" class="b-form__textarea" placeholder="Пожалуйста, напишите здесь страны (регионы), тип недвижимости, желательную цену, площадь, количество комнат и любые другие сведения о недвижимости, которые для вас важны."></textarea>
+						</div>
+						<div class="b-form__action">
+							<button type="submit" class="b-form__submit">Отправить сообщение</button>
+						</div>
+					</form>
+				</div>
+				<!-- end b-form -->
 			</div>
 		</div>
 		<!-- end b-feedback -->

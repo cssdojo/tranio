@@ -11,7 +11,6 @@
 		font-weight: bold
 		line-height: 1.3
 		color: inherit
-
 	.h2
 		font-family: 'PT Sans', sans-serif
 		font-size: 22px
@@ -49,7 +48,7 @@
 	.b-intro__in
 		width: 625px
 		margin: 0 auto
-		padding-top: 102px
+		padding-top: 100px
 		text-align: center
 		font-size: 22px
 		+text-shadow(0 0 8px rgba(0,0,0,.15))
@@ -152,7 +151,7 @@
 		position: relative
 		width: 810px
 		margin: 0 auto
-		padding: 33px 0
+		padding: 33px 0 40px
 	.b-feedback__title
 		font-size: 42px
 		font-weight: bold
@@ -160,20 +159,101 @@
 		text-align: center
 		margin-bottom: 26px
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.b-form
+	.b-form__row
+		+clr
+		margin-bottom: 18px
+	.b-form__group
+		position: relative
+		float: left
+		width: 255px
+		margin-left: 22px
+		&:first-child
+			margin-left: 0
+		&.is-error
+			.b-form__input
+				border-color: #d96c6c
+				+box-shadow(0 0 6px rgba(217,108,108,.25))
+				color: rgba(#b23535, .8)
+	.b-form__help
+		+border-radius(5px)
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		z-index: 1
+		margin-top: 17px
+		background: #d96c6c
+		color: #fff
+		font-size: 14px
+		text-align: center
+		padding: 10px
+		p
+			margin: 0
+		&:before
+			position: absolute
+			top: -11px
+			left: 50%
+			margin-left: -10px
+			+arr(20, 11, #d96c6c, t)
+			content: ""
+	.b-form__label
+		display: block
+		+opacity(.8)
+		color: #262626
+		font-size: 17px
+		margin-bottom: 7px
+	.b-form__input,
+	.b-form__textarea
+		display: block
+		width: 100%
+		+box
+		font-family: 'PT Sans', sans-serif
+		font-size: 17px
+		color: rgba(#262626, .8)
+		+placeholder-color(rgba(#262626, .8))
+		+border-radius(6px)
+		background-color: #fff
+		outline: none
+		&:focus
+			+placeholder-color(transparent)
+	.b-form__input
+		line-height: 23px
+		padding: 14px 12px 8px
+		+transition(all .2s linear)
+		border: 1px solid #b2a459
+		&:focus
+			border-color: #ffe97e
+			+box-shadow(0 0 13px #ffed99)
+	.b-form__textarea
+		padding: 12px
+		resize: vertical
+		height: 171px
+		border: 1px solid #d9c76c
+	.b-form__action
+		text-align: center
+		margin-top: 32px
+	.b-form__submit
+		display: inline-block
+		color: #fff
+		font-family: 'PT Sans', sans-serif
+		font-size: 22px
+		+nosel
+		background: #2badd9
+		+border-radius(6px)
+		border: 1px solid #2599c5
+		+font-smoothing
+		padding: 15px 27px
+		cursor: pointer
+		+transition(all .2s linear)
+		outline: none
+		text-decoration: none
+		&:hover
+			background: #29a3cc
+		&:active
+			background: #008fbf
+		&:disabled
+			border-color: #b3b3b3
+			background: #ccc
+			color: #f2f2f2
+			cursor: default

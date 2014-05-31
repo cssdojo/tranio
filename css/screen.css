@@ -7,7 +7,7 @@
 .b-intro:before, .b-intro:after { position: absolute; bottom: -497px; width: 100%; height: 505px; background: white; content: ""; }
 .b-intro:before { left: 50%; margin-left: -55%; -ms-transform: rotate(7deg); -webkit-transform: rotate(7deg); transform: rotate(7deg); }
 .b-intro:after { right: 50%; margin-right: -55%; -ms-transform: rotate(-7deg); -webkit-transform: rotate(-7deg); transform: rotate(-7deg); }
-.b-intro .b-intro__in { width: 625px; margin: 0 auto; padding-top: 102px; text-align: center; font-size: 22px; text-shadow: 0 0 8px rgba(0, 0, 0, 0.15); }
+.b-intro .b-intro__in { width: 625px; margin: 0 auto; padding-top: 100px; text-align: center; font-size: 22px; text-shadow: 0 0 8px rgba(0, 0, 0, 0.15); }
 .b-intro .b-intro__desc { margin-bottom: 49px; }
 .b-intro .b-intro__watch { text-align: center; }
 .b-intro .b-intro__watchbutton { display: inline-block; padding: 16px 35px; line-height: 24px; font-size: 22px; color: white; text-decoration: none; border: 2px solid white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; transition: all 0.3s linear; background: transparent; }
@@ -32,5 +32,28 @@
 
 .b-feedback { position: relative; background: #fff4c3 url("../img/feedback_line.png") 0 100% repeat-x; margin-bottom: 30px; min-height: 200px; -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); }
 .b-feedback:before { position: absolute; top: -130px; left: 0; right: 0; height: 278px; background-image: url("../img/feedback_shape.png"); background-repeat: no-repeat; background-position: 50% 50%; content: ""; }
-.b-feedback .b-feedback__in { position: relative; width: 810px; margin: 0 auto; padding: 33px 0; }
+.b-feedback .b-feedback__in { position: relative; width: 810px; margin: 0 auto; padding: 33px 0 40px; }
 .b-feedback .b-feedback__title { font-size: 42px; font-weight: bold; color: #262626; text-align: center; margin-bottom: 26px; }
+
+.b-form .b-form__row { *zoom: 1; margin-bottom: 18px; }
+.b-form .b-form__row:after { content: " "; display: table; clear: both; }
+.b-form .b-form__group { position: relative; float: left; width: 255px; margin-left: 22px; }
+.b-form .b-form__group:first-child { margin-left: 0; }
+.b-form .b-form__group.is-error .b-form__input { border-color: #d96c6c; -webkit-box-shadow: 0 0 6px rgba(217, 108, 108, 0.25); -moz-box-shadow: 0 0 6px rgba(217, 108, 108, 0.25); box-shadow: 0 0 6px rgba(217, 108, 108, 0.25); color: rgba(178, 53, 53, 0.8); }
+.b-form .b-form__help { -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; position: absolute; top: 100%; left: 0; right: 0; z-index: 1; margin-top: 17px; background: #d96c6c; color: white; font-size: 14px; text-align: center; padding: 10px; }
+.b-form .b-form__help p { margin: 0; }
+.b-form .b-form__help:before { position: absolute; top: -11px; left: 50%; margin-left: -10px; width: 0px; height: 0px; border-style: solid; border-width: 0 10px 11px 10px; border-color: transparent transparent #d96c6c transparent; content: ""; }
+.b-form .b-form__label { display: block; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; color: #262626; font-size: 17px; margin-bottom: 7px; }
+.b-form .b-form__input, .b-form .b-form__textarea { display: block; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "PT Sans", sans-serif; font-size: 17px; color: rgba(38, 38, 38, 0.8); -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; background-color: white; outline: none; }
+.b-form .b-form__input:-moz-placeholder, .b-form .b-form__input::-moz-placeholder, .b-form .b-form__textarea:-moz-placeholder, .b-form .b-form__textarea::-moz-placeholder { color: rgba(38, 38, 38, 0.8); opacity: 1; }
+.b-form .b-form__input::-webkit-input-placeholder, .b-form .b-form__textarea::-webkit-input-placeholder { color: rgba(38, 38, 38, 0.8); }
+.b-form .b-form__input:focus:-moz-placeholder, .b-form .b-form__input:focus::-moz-placeholder, .b-form .b-form__textarea:focus:-moz-placeholder, .b-form .b-form__textarea:focus::-moz-placeholder { color: transparent; opacity: 1; }
+.b-form .b-form__input:focus::-webkit-input-placeholder, .b-form .b-form__textarea:focus::-webkit-input-placeholder { color: transparent; }
+.b-form .b-form__input { line-height: 23px; padding: 14px 12px 8px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; border: 1px solid #b2a459; }
+.b-form .b-form__input:focus { border-color: #ffe97e; -webkit-box-shadow: 0 0 13px #ffed99; -moz-box-shadow: 0 0 13px #ffed99; box-shadow: 0 0 13px #ffed99; }
+.b-form .b-form__textarea { padding: 12px; resize: vertical; height: 171px; border: 1px solid #d9c76c; }
+.b-form .b-form__action { text-align: center; margin-top: 32px; }
+.b-form .b-form__submit { display: inline-block; color: white; font-family: "PT Sans", sans-serif; font-size: 22px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background: #2badd9; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; border: 1px solid #2599c5; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; padding: 15px 27px; cursor: pointer; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; outline: none; text-decoration: none; }
+.b-form .b-form__submit:hover { background: #29a3cc; }
+.b-form .b-form__submit:active { background: #008fbf; }
+.b-form .b-form__submit:disabled { border-color: #b3b3b3; background: #cccccc; color: #f2f2f2; cursor: default; }
